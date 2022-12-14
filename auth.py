@@ -1,4 +1,4 @@
-league_id = 1615760769
+league_id = 0 # Fill in your league ID
 
 # Fill this in if your league is private
 swid = '' # cookie data here
