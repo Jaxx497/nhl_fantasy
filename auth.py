@@ -1,8 +1,6 @@
-league_id = 0 # Fill in your league ID
-
-# Fill this in if your league is private
-swid = '' # cookie data here
-espn_s2 = '' # cookie data here
+league_id = 1615760769
+swid = '{9D9CAD83-8C3B-4971-B5B6-4D9D06251435}'
+espn_s2 = 'AECQrPLrN0YDEjP%2F1YgVj%2FCu4SU7DmTFYTrX7Jn0vH4nfT8E1dhDThN8XfpmIlyWppG%2BmBq68crnzuZBt%2BijMgbTFDqq8Ag2VA%2BOwOxguq5e8%2BVIYAg3btbKF5Mw6D3fX%2FYYiB7%2FDhSHTNMnYVMMp9w74qhpko21bb9ybVgLIaoQor9X2PE6AeMib6CNR9qNDNUwxMDu5Nm39r82BFgm%2FtpotBcU9SZgbAg%2BlYMNAksaoHLRl99CSskM0KdbPuAJoS25QE9KAJzGw7l3Eije8Nu%2BWJBbOslGHBEb95FvGrWH%2BQ%3D%3D'
 
 nhl_team_info = {
     "1": {

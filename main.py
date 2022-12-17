@@ -5,7 +5,7 @@ import pprint as pp
 from datetime import datetime
 from dateutil import tz
 from dataclasses import dataclass
-import auth as xe
+import auth as xe	# type: ignore
 
 @dataclass
 class FantasyTeam:
@@ -51,7 +51,7 @@ def main():
 
 			print(f"{away_lo} // {home_lo}")
 
-		time.sleep(40)
+		time.sleep(120)
 
 def get_final_fantasy(fantasy_teams, meta):
 	output = meta
@@ -134,6 +134,8 @@ def get_nhl_today():
 	total_games = nhl_games_today["totalGames"]
 	game_list = nhl_games_today["dates"][0]["games"]
 
+
+	print(f"Away    Home     Status")
 	for game in game_list:
 		status = game["status"]["detailedState"]
 		time_utc = game["gameDate"]
@@ -146,9 +148,9 @@ def get_nhl_today():
 				temp = f"End {period}"
 				game_status = f"{'Live':<12} {temp:>12}"
 			else:
-				game_status = f"{'Live':<12}{period} {game_time} Rem"
+				game_status = f"{'Live':<12}{period:<3} {game_time} Rem"
 
-		elif game["status"]["abstractGameState"] == "FINAL":
+		elif game["status"]["abstractGameState"] == "Final":
 			game_status = f"{'Final':<25}"
 
 		else:
@@ -171,7 +173,7 @@ def get_nhl_today():
 		away_abbr = xe.nhl_team_info[str(away_id)]["abbr"]
 		away_pts = game["teams"]["away"]["score"]
 
-		print(f"{game_status} || {away_abbr} {away_pts}  v  {home_pts} {home_abbr}")
+		print(f"{away_abbr} {away_pts} v {home_abbr} {home_pts} || {game_status}")
 
 def get_fantasy_today():
 	url = f"https://fantasy.espn.com/apis/v3/games/fhl/seasons/2023/segments/0/leagues/{xe.league_id}"
