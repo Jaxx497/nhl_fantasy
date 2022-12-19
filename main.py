@@ -79,15 +79,19 @@ def get_final_fantasy(fantasy_teams, meta):
 					"abbr": home.abbr,
 					"team_id": home.id,
 					"division": home.div,
+
 					"wins": home.wins,
 					"losses": home.losses,
 					"ties": home.ties,
 					"rank": home.rank,
+
 					"streak_len": home.streak_len,
 					"streak_type": home.streak_type,
+
 					"pts_up_to": home_pts_old,
 					"pts_week": home_pts_live,
 					"pts_today": f"{home_pts_live - home_pts_old:.1f}",
+					
 					"pts_for": f"{home.pts_for:.1f}",
 					"pts_against": f"{home.pts_against:.1f}",
 					"acquisitions": home.acquisitions,
