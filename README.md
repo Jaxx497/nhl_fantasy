@@ -10,4 +10,4 @@ Version 0.1 is proof of concept. Functionally the program is able to do what it 
 
 ## Next Steps
 
-I've begun working on v0.2 which is written in Rust with the Yew framework and displays information in a webpage rather than the console. I've been met with several hurdles trying to do this but progress is being made. I hope to have a release out by Jan 2023. 
+I've begun working on v0.2 which is written in Rust with the Yew framework and displays information in a webpage rather than the console. I've been met with several hurdles trying to do this but progress is being made. I hope to have a release out by the end of Jan 2023. 
